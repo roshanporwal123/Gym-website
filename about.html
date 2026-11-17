@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – BodyFitness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Scroll line + dumbbell -->
+<svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#d97706" stroke-width="3" stroke-linejoin="round" fill="#fffbeb">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg>
+
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Body<span>Fitness</span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-sm">Join Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+
+<!-- About with video background -->
+<section id="about" class="section about-video page-top">
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="video/Gym5.mp4" type="video/mp4" />
+  </video>
+  <div class="bg-overlay"></div>
+
+  <div class="container two-col about-content">
+    <div class="reveal">
+      <span class="eyebrow">About Us</span>
+      <h2>More Than a Gym. A Movement.</h2>
+      <p>At BodyFitness we help people become stronger, healthier and more confident every day with science-backed training and real support.</p>
+    </div>
+    <div class="stats reveal">
+      <div><b>12+</b><small>Years Experience</small></div>
+      <div><b>16K+</b><small>Happy Members</small></div>
+      <div><b>40+</b><small>Expert Trainers</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- <footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+</footer> -->
+
+<!-- OUR STORY + MISSION & VISION -->
+<section class="story" id="story">
+  <div class="story-container">
+
+    <div class="story-img reveal">
+      <img src="images/Fitness.jpg" alt="BodyFitness Gym">
+      <div class="exp-badge">
+        <h3>12+</h3>
+        <p>Years of Excellence</p>
+      </div>
+    </div>
+
+    <div class="story-content reveal">
+      <span class="section-tag">OUR STORY</span>
+      <h2>A Small Beginning, <span>A Big Movement</span></h2>
+      <p>
+        BodyFitness started with a simple idea: everyone deserves a place
+        where they can begin their fitness journey without judgement. Today,
+        we are a strong community of 16K+ members and growing every day.
+      </p>
+      <p>
+        With modern equipment, certified trainers and science-backed training,
+        we help you become not just fit, but confident.
+      </p>
+      <a href="programs.html" class="story-btn">Explore Programs</a>
+    </div>
+  </div>
+
+  <div class="mv-grid">
+    <div class="mv-card reveal">
+      <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+      <h3>Our Mission</h3>
+      <p>To give every member the right guidance, the best equipment and a
+        motivating environment so they can achieve their fitness goals.</p>
+    </div>
+
+    <div class="mv-card reveal">
+      <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+      <h3>Our Vision</h3>
+      <p>To build a healthy and active community where fitness becomes a
+        part of everyone's lifestyle.</p>
+    </div>
+
+    <div class="mv-card reveal">
+      <div class="mv-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+      <h3>Our Promise</h3>
+      <p>Honest training, real results and support at every step. No
+        shortcuts, only hard work that pays off.</p>
+    </div>
+  </div>
+</section>
+
+<section class="scroll3d">
+  <div class="scroll3d-intro">
+    <span class="eyebrow">OUR GALLERY</span>
+    <h2>Inside <span>BodyFitness</span></h2>
+  </div>
+
+  <div class="scroll3d-stage">
+    <div class="scroll3d-scene">
+      <div class="s3d-card"><img src="images/Gym3.jpg" alt="Gym 1" /></div>
+      <div class="s3d-card"><img src="images/Gym4.jpg" alt="Gym 2" /></div>
+      <div class="s3d-card"><img src="images/Gym6.jpg" alt="Gym 3" /></div>
+      <div class="s3d-card"><img src="images/flys.jpg" alt="Gym 4" /></div>
+      <div class="s3d-card"><img src="images/gym8.jpg" alt="Gym 5" /></div>
+      <div class="s3d-card"><img src="images/gym9.jpg" alt="Gym 6" /></div>
+    </div>
+  </div>
+</section>
+
+<section class="tm-section">
+  <span class="tm-eyebrow">MEMBER STORIES</span>
+  <h2>Real People. Real Results.</h2>
+  <p class="tm-hint">Drag the cards around</p>
+
+  <div class="tm-stage">
+    <div class="tm-card c1">
+      <p>"Lost 12 kg in 4 months. The trainers supported me at every step."</p>
+      <div class="tm-user"><b>Rahul</b><span>Strength Program</span></div>
+    </div>
+
+    <div class="tm-card c2">
+      <p>"Yoga classes reduced both my back pain and my stress."</p>
+      <div class="tm-user"><b>Priya</b><span>Yoga Program</span></div>
+    </div>
+
+    <div class="tm-card c3">
+      <p>"Best equipment and best community. Going to the gym is now a habit."</p>
+      <div class="tm-user"><b>Aman</b><span>CrossFit</span></div>
+    </div>
+
+    <div class="tm-card c4">
+      <p>"The cardio plan was simple, but the results were amazing."</p>
+      <div class="tm-user"><b>Neha</b><span>Cardio Program</span></div>
+    </div>
+
+    <div class="tm-card c5">
+      <p>"Flexible timings and friendly staff. Highly recommended!"</p>
+      <div class="tm-user"><b>Karan</b><span>Beginner Plan</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="rv" id="reviews">
+  <div class="rv-head">
+    <span class="eyebrow">Reviews</span>
+    <h2>What Our Members Say</h2>
+    <p>Real stories from people who trained with us.</p>
+    <div class="rv-rating"><b>4.9</b> <span>★★★★★</span> <small>from 500+ members</small></div>
+  </div>
+
+  <div class="rv-grid">
+    <article class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <p class="rv-text">The trainers are incredibly supportive. I lost 9 kg in just 4 months and my energy is so much better.</p>
+      <div class="rv-user">
+        <div class="rv-avatar">R</div>
+        <div>
+          <h4>Rahul Sharma</h4>
+          <span>Weight Loss Program</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <p class="rv-text">The equipment is modern and the gym is always clean. One-on-one coaching nearly doubled my strength in just 6 months.</p>
+      <div class="rv-user">
+        <div class="rv-avatar">P</div>
+        <div>
+          <h4>Priya Verma</h4>
+          <span>Personal Training</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <p class="rv-text">The Zumba and HIIT classes are so motivating. Coming to the morning batch has become a habit, and I haven't missed a single day.</p>
+      <div class="rv-user">
+        <div class="rv-avatar">A</div>
+        <div>
+          <h4>Amit Singh</h4>
+          <span>Group Classes</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="rv-card">
+      <div class="rv-stars">★★★★★</div>
+      <p class="rv-text">Best guidance for muscle gain I've found. The trainers focus on correct form, so I keep making progress without any injuries.</p>
+      <div class="rv-user">
+        <div class="rv-avatar">K</div>
+        <div>
+          <h4>Karan Mehta</h4>
+          <span>Muscle Gain</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="zoom-section">
+  <!-- <h2 class="zoom-title">Stronger Every <span>Single Day.</span></h2> -->
+
+  <div class="zoom-stage" id="zoomStage">
+    <div class="zoom-item"><img src="images/Gym1.jpg" alt="Muscle Gain" /></div>
+    <div class="zoom-item"><img src="images/Gym2.jpg" alt="Fitness" /></div>
+    <div class="zoom-item"><img src="images/pushup.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/overhead.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/trainer2.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/trainer3.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/Weight-Loss.jpg" alt="Weight Loss" /></div>
+    <div class="zoom-item"><img src="images/Gym3.jpg" alt="Personal Training" /></div>
+    <div class="zoom-item"><img src="images/Gym4.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/Fitness.jpg" alt="Group Classes" /></div>
+    <div class="zoom-item"><img src="images/Gym6.jpg" alt="Group Classes" /></div>
+
+  </div>
+</section>
+
+
+<!-- FREE TRIAL SECTION -->
+<section class="trial" id="free-trial">
+  <div class="trial-container">
+
+    <div class="trial-info">
+      <span class="trial-badge">🔥 Limited Time Offer</span>
+      <h2>Get Your <span>First Day FREE</span></h2>
+      <p>Come try our gym with zero commitment. Meet our trainers, use our equipment and feel the difference yourself.</p>
+
+      <ul class="trial-points">
+        <li>✔ 1 Day Free Access</li>
+        <li>✔ Free Fitness Assessment</li>
+        <li>✔ Personalized Workout Plan</li>
+        <li>✔ No Credit Card Required</li>
+      </ul>
+
+      <div class="trial-timer" id="trialTimer">
+        <div><b id="tDays">00</b><small>Days</small></div>
+        <div><b id="tHours">00</b><small>Hours</small></div>
+        <div><b id="tMins">00</b><small>Mins</small></div>
+        <div><b id="tSecs">00</b><small>Secs</small></div>
+      </div>
+      <p class="trial-note">Time left until this offer ends</p>
+    </div>
+
+    <form class="trial-form" id="trialForm" novalidate>
+      <h3>Claim Your Free Trial</h3>
+
+      <div class="form-group">
+        <label for="tName">Full Name</label>
+        <input type="text" id="tName" placeholder="Enter your full name" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="tPhone">Phone Number</label>
+        <input type="tel" id="tPhone" placeholder="10-digit mobile number" maxlength="10" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="tEmail">Email</label>
+        <input type="email" id="tEmail" placeholder="you@example.com" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="tGoal">Your Goal</label>
+          <select id="tGoal">
+            <option value="">Select goal</option>
+            <option>Weight Loss</option>
+            <option>Muscle Gain</option>
+            <option>Personal Training</option>
+            <option>Group Classes</option>
+          </select>
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="tTime">Preferred Slot</label>
+          <select id="tTime">
+            <option value="">Select slot</option>
+            <option>Morning (5 AM - 10 AM)</option>
+            <option>Afternoon (10 AM - 4 PM)</option>
+            <option>Evening (4 PM - 10 PM)</option>
+          </select>
+          <small class="error"></small>
+        </div>
+      </div>
+
+      <button type="submit" class="trial-btn">Book My Free Trial</button>
+      <p class="form-privacy">🔒 Your details are safe with us. No spam, ever.</p>
+    </form>
+
+    <div class="trial-success" id="trialSuccess">
+      <div class="tick">✓</div>
+      <h3>Booking Confirmed!</h3>
+      <p>Thank you <b id="sName"></b>! Our team will call you shortly.</p>
+      <button type="button" id="trialReset" class="trial-btn">Book Another</button>
+    </div>
+
+  </div>
+</section>
+
+<footer class="ft">
+
+  <div class="ft-main">
+
+    <!-- Brand + social -->
+    <div class="ft-col ft-brand">
+      <a href="index.html" class="logo">Body<span>Fitness</span></a>
+      <p>Expert coaches, modern equipment and a supportive community. We are here to help you become stronger, fitter and more confident.</p>
+    <div class="ft-social">
+   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+   </a>
+   <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+   </a>
+   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+   </a>
+   <a href="https://wa.me/919311135172" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+   </a>
+   <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+    <i class="fa-brands fa-x-twitter"></i>
+   </a>
+  </div>
+  </div>
+
+    <!-- Quick links -->
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Programs -->
+    <div class="ft-col">
+      <h4>Our Programs</h4>
+      <a href="programs.html">Weight Loss</a>
+      <a href="programs.html">Muscle Gain</a>
+      <a href="programs.html">Personal Training</a>
+      <a href="programs.html">Group Classes</a>
+      <a href="programs.html">Nutrition Plans</a>
+    </div>
+
+    <!-- Timing + Contact -->
+    <div class="ft-col">
+      <h4>Gym Timing</h4>
+      <p class="ft-time"><b>Mon – Sat</b><span>5:00 AM – 10:00 PM</span></p>
+      <p class="ft-time"><b>Sunday</b><span>7:00 AM – 12:00 PM</span></p>
+      <h4 class="ft-gap">Contact</h4>
+      <p>📍 Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+      <p>📞 +91 93111 35172</p>
+      <p>✉️ hello@bodyfitness.com</p>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="ft-news">
+    <div>
+      <h4>Get Free Fitness Tips</h4>
+      <p>Weekly workout aur diet tips seedha aapke inbox mein.</p>
+    </div>
+    <form id="newsForm" class="ft-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-sm">Subscribe</button>
+    </form>
+    <p class="ft-msg" id="newsMsg"></p>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+    <p>Made with 💪 for fitness lovers</p>
+  </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="testimonials.js"></script>
+<script src="scroll3d.js"></script>
+<script src="script.js"></script>
+<script src="zoom-effect.js"></script>
+</body>
+</html>

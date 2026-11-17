@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BodyFitness – Build Your Strongest Self</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Scroll line + dumbbell -->
+<!-- <svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#b6ff00" stroke-width="3" stroke-linejoin="round" fill="#14141b">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg> -->
+<svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#d97706" stroke-width="3" stroke-linejoin="round" fill="#fffbeb">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Body<span>Fitness</span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-sm">Join Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<!-- <section id="home" class="hero">
+  <video id="heroVideo" class="hero-video" autoplay muted loop playsinline>
+    <source src="video/Gym.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <span class="tag reveal">★ 4.8/5 Rated by members</span>
+    <h1 class="reveal">Build Your <span>Strongest</span> Self</h1>
+    <p class="reveal">Expert coaches, modern equipment and a community that keeps you moving. Start your transformation today.</p>
+    <div class="reveal">
+      <a href="contact.html" class="btn">Start Free Trial</a>
+      <a href="programs.html" class="btn btn-outline">Explore Programs</a>
+    </div>
+  </div>
+</section> -->
+
+<!-- Hero Slider -->
+<section id="home" class="hs">
+
+  <!-- Background videos (har slide ka apna) -->
+  <div class="hs-bgs">
+    <video class="hs-bg active" muted loop playsinline preload="metadata"><source src="video/Gym.mp4" type="video/mp4" /></video>
+    <video class="hs-bg" muted loop playsinline preload="metadata"><source src="video/Gym2.mp4" type="video/mp4" /></video>
+    <video class="hs-bg" muted loop playsinline preload="metadata"><source src="video/Gym7.mp4" type="video/mp4" /></video>
+    <video class="hs-bg" muted loop playsinline preload="metadata"><source src="video/Gym3.mp4" type="video/mp4" /></video>
+  </div>
+  <div class="hs-overlay"></div>
+
+  <!-- Curve animation -->
+  <div class="hs-curves" aria-hidden="true">
+    <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="hsGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#fbbf24" />
+          <stop offset="1" stop-color="#f97316" />
+        </linearGradient>
+      </defs>
+      <path class="hs-c hs-c1" d="M-100 520 C 180 320, 480 720, 780 480 S 1280 220, 1540 400" />
+      <path class="hs-c hs-c2" d="M-100 600 C 200 400, 500 800, 800 560 S 1300 300, 1540 480" />
+      <path class="hs-c hs-c3" d="M-100 680 C 250 480, 560 860, 860 620 S 1320 380, 1540 560" />
+    </svg>
+  </div>
+
+  <!-- Slides -->
+  <div class="hs-slides">
+
+    <div class="hs-slide active">
+      <div class="container hs-content">
+        <span class="tag">★ 4.8/5 Rated by members</span>
+        <h1>Build Your <span>Strongest</span> Self</h1>
+        <p>Expert coaches, modern equipment and a community that keeps you moving. Start your transformation today.</p>
+        <div class="hs-btns">
+          <a href="contact.html" class="btn">Start Free Trial</a>
+          <a href="programs.html" class="btn btn-outline">Explore Programs</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hs-slide">
+      <div class="container hs-content">
+        <span class="tag">🏋️ Certified Trainers</span>
+        <h1>Train With <span>Expert</span> Coaches</h1>
+        <p>Personal guidance, custom plans and real results, step by step.</p>
+        <div class="hs-btns">
+          <a href="programs.html" class="btn">View Programs</a>
+          <a href="about.html" class="btn btn-outline">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hs-slide">
+      <div class="container hs-content">
+        <span class="tag">🥗 Nutrition Support</span>
+        <h1>Eat Smart, <span>Grow</span> Stronger</h1>
+        <p>Simple meal plans and diet guidance that fit your goal and your routine.</p>
+        <div class="hs-btns">
+          <a href="programs.html" class="btn">Our Programs</a>
+          <a href="contact.html" class="btn btn-outline">Talk To Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hs-slide">
+      <div class="container hs-content">
+        <span class="tag">🔥 Limited Offer</span>
+        <h1>Join Today, <span>Transform</span> Tomorrow</h1>
+        <p>Flexible membership plans at an affordable price. First week free!</p>
+        <div class="hs-btns">
+          <a href="pricing.html" class="btn">See Pricing</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Arrows + dots -->
+  <button class="hs-arrow hs-prev" id="hsPrev" aria-label="Previous slide">‹</button>
+  <button class="hs-arrow hs-next" id="hsNext" aria-label="Next slide">›</button>
+  <div class="hs-dots" id="hsDots"></div>
+</section>
+
+<!-- <footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+</footer> -->
+
+<!-- Stats Counter -->
+<section class="sc" id="stats">
+  <div class="sc-grid">
+
+    <div class="sc-item reveal">
+      <div class="sc-icon">👥</div>
+      <h3><span class="sc-num" data-target="1200" data-suffix="+">0</span></h3>
+      <p>Happy Members</p>
+    </div>
+
+    <div class="sc-item reveal">
+      <div class="sc-icon">🏋️</div>
+      <h3><span class="sc-num" data-target="25" data-suffix="+">0</span></h3>
+      <p>Expert Trainers</p>
+    </div>
+
+    <div class="sc-item reveal">
+      <div class="sc-icon">🏆</div>
+      <h3><span class="sc-num" data-target="12" data-suffix="+">0</span></h3>
+      <p>Years Experience</p>
+    </div>
+
+    <div class="sc-item reveal">
+      <div class="sc-icon">🔥</div>
+      <h3><span class="sc-num" data-target="15" data-suffix="+">0</span></h3>
+      <p>Workout Programs</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="wc" id="why-us">
+  <div class="wc-head reveal">
+    <span class="eyebrow">Why Choose Us</span>
+    <h2>Why <span>BodyFitness</span> Is Different</h2>
+    <p>More than a gym, a partner that walks with you towards your fitness goals.</p>
+  </div>
+
+  <div class="wc-grid">
+
+    <article class="wc-card reveal" data-num="01">
+      <div class="wc-icon">🏋️</div>
+      <h3>Certified Trainers</h3>
+      <p>Experienced coaches jo aapke goal ke hisaab se personal guidance dete hain.</p>
+    </article>
+
+    <article class="wc-card reveal" data-num="02">
+      <div class="wc-icon">⚙️</div>
+      <h3>Modern Equipment</h3>
+      <p>Latest cardio aur strength machines, jo regular maintain ki jaati hain.</p>
+    </article>
+
+    <article class="wc-card reveal" data-num="03">
+      <div class="wc-icon">🥗</div>
+      <h3>Diet &amp; Nutrition Plans</h3>
+      <p>Simple meal plans jo aapki body aur routine ke hisaab se banaye jaate hain.</p>
+    </article>
+
+    <article class="wc-card reveal" data-num="04">
+      <div class="wc-icon">🕒</div>
+      <h3>Flexible Timings</h3>
+      <p>Subah 5 baje se raat 10 baje tak open, apni suvidha se aao.</p>
+    </article>
+
+    <article class="wc-card reveal" data-num="05">
+      <div class="wc-icon">👥</div>
+      <h3>Supportive Community</h3>
+      <p>Motivated members ke saath train karo aur har din aage badho.</p>
+    </article>
+
+    <article class="wc-card reveal" data-num="06">
+      <div class="wc-icon">💰</div>
+      <h3>Affordable Plans</h3>
+      <p>Har budget ke liye membership plans, koi hidden charges nahi.</p>
+    </article>
+
+  </div>
+
+  <div class="wc-cta reveal">
+    <a href="contact.html" class="btn">Start Free Trial</a>
+    <a href="pricing.html" class="btn btn-outline">View Pricing</a>
+  </div>
+</section>
+
+<!-- poora section, isme gradient background lagega -->
+<section class="bk-section">
+
+<div class="bk-wrap">
+  <!-- upar ka heading -->
+  <div class="bk-intro">
+    <span class="bk-eyebrow">TRAIN HARD</span>
+    <h2>Build Your <span>Strength</span></h2>
+  </div>
+
+  <!-- stage pin hoga, isi ke andar book khulegi -->
+  <div class="bk-stage">
+    <div class="bk-book">
+
+      <!-- ek bk-page = ek page. front = samne ki photo, back = palatne ke baad ki photo -->
+      <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/Gym3.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/Gym4.jpg" alt="" /></div>
+      </div>
+
+       <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/DeadLift.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/plank.jpg" alt="" /></div>
+      </div>
+
+       <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/pullup.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/pushup.jpg" alt="" /></div>
+      </div>
+
+       <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/Gym.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/Fitness.jpg" alt="" /></div>
+      </div>
+
+      <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/Gym5.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/Gym6.jpg" alt="" /></div>
+      </div>
+
+      <div class="bk-page">
+        <div class="bk-side bk-front"><img src="images/Muscle-Gain.jpg" alt="" /></div>
+        <div class="bk-side bk-back"><img src="images/Cardio.jpg" alt="" /></div>
+      </div>
+
+    </div>
+   </div>
+</div>
+</section>
+
+<section class="fx-card">
+  <h1 class="fx-title">
+    <span>Bo</span>
+    <span class="fx-slot"><img src="images/Muscle-Gain.jpg" alt="" /></span>
+    <span class="fx-slot"><img src="images/trainer2.jpg" alt="" /></span>
+    <span>&nbsp;Fitness</span>
+  </h1>
+</section>
+
+<!-- Our Trainers -->
+<section class="tr" id="trainers">
+  <div class="tr-head reveal">
+    <span class="eyebrow">Our Team</span>
+    <h2>Meet Our Expert <span>Trainers</span></h2>
+    <p>Certified coaches who will guide you at every step of your fitness journey.</p>
+  </div>
+
+  <div class="tr-grid">
+
+    <article class="tr-card reveal">
+      <div class="tr-photo" data-initial="R">
+        <img src="images/trainer1.jpg" alt="Rohit Sharma" onerror="this.style.display='none'">
+        <div class="tr-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="tr-info">
+        <h3>Rohit Sharma</h3>
+        <span class="tr-role">Strength &amp; Muscle Gain</span>
+        <p>8 years experience</p>
+      </div>
+    </article>
+
+    <article class="tr-card reveal">
+      <div class="tr-photo" data-initial="P">
+        <img src="images/trainer2.jpg" alt="Shivam Bhargav" onerror="this.style.display='none'">
+        <div class="tr-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="tr-info">
+        <h3>Shivam Bhargav</h3>
+        <span class="tr-role">Yoga &amp; Zumba</span>
+        <p>6 years experience</p>
+      </div>
+    </article>
+
+    <article class="tr-card reveal">
+      <div class="tr-photo" data-initial="A">
+        <img src="images/trainer3.jpg" alt="Amit Singh" onerror="this.style.display='none'">
+        <div class="tr-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="tr-info">
+        <h3>Amit Singh</h3>
+        <span class="tr-role">Weight Loss &amp; Cardio</span>
+        <p>5 years experience</p>
+      </div>
+    </article>
+
+    <article class="tr-card reveal">
+      <div class="tr-photo" data-initial="N">
+        <img src="images/trainer4.jpg" alt="Piyush Sen" onerror="this.style.display='none'">
+        <div class="tr-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div class="tr-info">
+        <h3>Piyush Sen</h3>
+        <span class="tr-role">Nutrition &amp; Diet Coach</span>
+        <p>7 years experience</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="ft">
+
+  <div class="ft-main">
+
+    <!-- Brand + social -->
+    <div class="ft-col ft-brand">
+      <a href="index.html" class="logo">Body<span>Fitness</span></a>
+      <p>Expert coaches, modern equipment and a supportive community. We are here to help you become stronger, fitter and more confident.</p>
+    <div class="ft-social">
+     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram" class="ig">
+     <i class="fa-brands fa-instagram"></i>
+     </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook" class="fb">
+    <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube" class="yt">
+    <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://wa.me/919311135172" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp" class="wa">
+    <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter" class="tw">
+    <i class="fa-brands fa-x-twitter"></i>
+    </a>
+   </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Programs -->
+    <div class="ft-col">
+      <h4>Our Programs</h4>
+      <a href="programs.html">Weight Loss</a>
+      <a href="programs.html">Muscle Gain</a>
+      <a href="programs.html">Personal Training</a>
+      <a href="programs.html">Group Classes</a>
+      <a href="programs.html">Nutrition Plans</a>
+    </div>
+
+    <!-- Timing + Contact -->
+    <div class="ft-col">
+      <h4>Gym Timing</h4>
+      <p class="ft-time"><b>Mon – Sat</b><span>5:00 AM – 10:00 PM</span></p>
+      <p class="ft-time"><b>Sunday</b><span>7:00 AM – 12:00 PM</span></p>
+      <h4 class="ft-gap">Contact</h4>
+      <p>📍 Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+      <p>📞 +91 93111 35172</p>
+      <p>✉️ hello@bodyfitness.com</p>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="ft-news">
+    <div>
+      <h4>Get Free Fitness Tips</h4>
+      <p>Weekly workout aur diet tips seedha aapke inbox mein.</p>
+    </div>
+    <form id="newsForm" class="ft-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-sm">Subscribe</button>
+    </form>
+    <p class="ft-msg" id="newsMsg"></p>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+    <p>Made with 💪 for fitness lovers</p>
+  </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="effect.js"></script>
+<script src="book-flip.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

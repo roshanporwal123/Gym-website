@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact – BodyFitness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Scroll line + dumbbell -->
+<svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#d97706" stroke-width="3" stroke-linejoin="round" fill="#fffbeb">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Body<span>Fitness</span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn-sm">Join Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- Contact -->
+<!-- <section id="contact-us" class="section contact-video page-top">
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="video/Gym3.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+
+  <div class="container contact-content">
+    <div class="head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Get In Touch</h2>
+      <p>Have any questions? We will reply with in 24 hours.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="contact-info reveal">
+        <div class="info-item"><span class="icon">📍</span><div><h3>Address</h3><p>BodyFitness Gym, 2nd Floor, Shivam Plaza,<br>Sector 12, Dwarka, New Delhi -110075</p></div></div>
+        <div class="info-item"><span class="icon">📞</span><div><h3>Phone</h3><p>+91 93111 35172</p></div></div>
+        <div class="info-item"><span class="icon">✉️</span><div><h3>Email</h3><p>hello@bodyfitness.com</p></div></div>
+        <div class="info-item"><span class="icon">🕒</span><div><h3>Timing</h3><p>Mon-Sat: 5 AM - 10 PM<br>Sunday: 7 AM - 12 PM</p></div></div>
+        <a href="https://wa.me/919311135172" target="_blank" class="btn btn-sm">💬 WhatsApp Us</a>
+      </div>
+
+      <form class="contact-form card reveal" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email">
+        <select name="goal">
+          <option value="">Your Goal</option>
+          <option>Weight Loss</option>
+          <option>Muscle Gain</option>
+          <option>Strength Training</option>
+          <option>Yoga / Zumba</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </div>
+</section> -->
+
+<!-- Contact: sirf video -->
+<section id="contact-us" class="section contact-video page-top">
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="video/Gym3.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+</section>
+
+<!-- Heading + Form wali alag section -->
+<section class="section contact-form-section">
+  <div class="container">
+
+    <div class="head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Get In Touch</h2>
+      <p>Have any questions? We will reply within 24 hours.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="contact-info reveal">
+        <div class="info-item"><span class="icon">📍</span><div><h3>Address</h3><p>BodyFitness Gym, 2nd Floor, Shivam Plaza,<br>Sector 12, Dwarka, New Delhi -110075</p></div></div>
+        <div class="info-item"><span class="icon">📞</span><div><h3>Phone</h3><p>+91 93111 35172</p></div></div>
+        <div class="info-item"><span class="icon">✉️</span><div><h3>Email</h3><p>hello@bodyfitness.com</p></div></div>
+        <div class="info-item"><span class="icon">🕒</span><div><h3>Timing</h3><p>Mon-Sat: 5 AM - 10 PM<br>Sunday: 7 AM - 12 PM</p></div></div>
+        <a href="https://wa.me/919311135172" target="_blank" class="btn btn-sm">💬 WhatsApp Us</a>
+      </div>
+
+      <form class="contact-form card reveal" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email">
+        <select name="goal">
+          <option value="">Your Goal</option>
+          <option>Weight Loss</option>
+          <option>Muscle Gain</option>
+          <option>Strength Training</option>
+          <option>Yoga / Zumba</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section" id="location">
+  <div class="map-head">
+    <span class="map-tag">Find Us</span>
+    <h2>Our <span>Location</span></h2>
+    <p>Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+  </div>
+
+  <div class="map-box">
+    <iframe
+      src="https://www.google.com/maps?q=Sector+12+Dwarka+New+Delhi&output=embed"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="BodyFitness Location">
+    </iframe>
+  </div>
+
+  <a class="map-btn"
+     href="https://www.google.com/maps/search/?api=1&query=Sector+12+Dwarka+New+Delhi"
+     target="_blank" rel="noopener">
+    Get Directions
+  </a>
+</section>
+
+<!-- <footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+</footer> -->
+<footer class="ft">
+
+  <div class="ft-main">
+
+    <!-- Brand + social -->
+    <div class="ft-col ft-brand">
+      <a href="index.html" class="logo">Body<span>Fitness</span></a>
+     <p>Expert coaches, modern equipment and a supportive community. We are here to help you become stronger, fitter and more confident.</p>
+    <div class="ft-social">
+   <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+   </a>
+   <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+   </a>
+   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+   </a>
+   <a href="https://wa.me/919311135172" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+   </a>
+   <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+    <i class="fa-brands fa-x-twitter"></i>
+   </a>
+   </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Programs -->
+    <div class="ft-col">
+      <h4>Our Programs</h4>
+      <a href="programs.html">Weight Loss</a>
+      <a href="programs.html">Muscle Gain</a>
+      <a href="programs.html">Personal Training</a>
+      <a href="programs.html">Group Classes</a>
+      <a href="programs.html">Nutrition Plans</a>
+    </div>
+
+    <!-- Timing + Contact -->
+    <div class="ft-col">
+      <h4>Gym Timing</h4>
+      <p class="ft-time"><b>Mon – Sat</b><span>5:00 AM – 10:00 PM</span></p>
+      <p class="ft-time"><b>Sunday</b><span>7:00 AM – 12:00 PM</span></p>
+      <h4 class="ft-gap">Contact</h4>
+      <p>📍 Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+      <p>📞 +91 93111 35172</p>
+      <p>✉️ hello@bodyfitness.com</p>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="ft-news">
+    <div>
+      <h4>Get Free Fitness Tips</h4>
+      <p>Weekly workout aur diet tips seedha aapke inbox mein.</p>
+    </div>
+    <form id="newsForm" class="ft-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-sm">Subscribe</button>
+    </form>
+    <p class="ft-msg" id="newsMsg"></p>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+    <p>Made with 💪 for fitness lovers</p>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

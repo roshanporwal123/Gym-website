@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing – BodyFitness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="image-trail.css" />
+</head>
+<body>
+
+<!-- Scroll line + dumbbell -->
+<svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#d97706" stroke-width="3" stroke-linejoin="round" fill="#fffbeb">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Body<span>Fitness</span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-sm">Join Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- Pricing -->
+<section id="pricing" class="section pricing-video page-top">
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="video/Gym6.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+
+  <div class="container pricing-content">
+    <div class="head reveal">
+      <span class="eyebrow">Pricing</span>
+      <h2>Choose Your Plan</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card price reveal">
+        <h3>Starter</h3>
+        <div class="amount">₹999<small>/month</small></div>
+        <ul><li>Off-peak gym access</li><li>2 group classes</li><li>Fitness assessment</li></ul>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </article>
+      <article class="card price popular reveal">
+        <span class="badge">Most Popular</span>
+        <h3>Pro</h3>
+        <div class="amount">₹1,799<small>/month</small></div>
+        <ul><li>Unlimited 24/7 access</li><li>8 group classes</li><li>Personal workout plan</li></ul>
+        <a href="contact.html" class="btn">Get Started</a>
+      </article>
+      <article class="card price reveal">
+        <h3>Elite</h3>
+        <div class="amount">₹2,999<small>/month</small></div>
+        <ul><li>Everything in Pro</li><li>2 PT sessions</li><li>Nutrition coaching</li></ul>
+        <a href="contact.html" class="btn btn-outline">Get Started</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT WORKS ANIMATION -->
+<section class="rw-section" id="recent-works">
+  <div class="rw-head">
+    <span>RECENT WORKS</span>
+    <span>2023-2026</span>
+  </div>
+
+  <div class="rw-scene">
+    <div class="rw-stack">
+      <div class="rw-card"><img src="images/Fitness.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym1.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym2.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym3.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym4.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym5.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym6.jpg" /></div>
+      <div class="rw-card"><img src="images/Gym.jpg" /></div>
+      <div class="rw-card"><img src="images/Crossfit.jpg" /></div>
+      <div class="rw-card"><img src="images/Muscle-Gain.jpg" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="included" id="included">
+  <div class="included-head">
+    <span class="included-tag">Every Plan Includes</span>
+    <h2>What's <span>Included</span></h2>
+    <p>No matter which plan you choose, you get all of this.</p>
+  </div>
+
+  <div class="included-grid">
+    <div class="inc-card">
+      <div class="inc-icon">🏋️</div>
+      <h3>Modern Equipment</h3>
+      <p>Latest machines, free weights and a full cardio zone.</p>
+    </div>
+
+    <div class="inc-card">
+      <div class="inc-icon">🧑‍🏫</div>
+      <h3>Trainer Guidance</h3>
+      <p>Floor trainers are always available to check your form.</p>
+    </div>
+
+    <div class="inc-card">
+      <div class="inc-icon">🔐</div>
+      <h3>Secure Lockers</h3>
+      <p>Keep your belongings safe while you train.</p>
+    </div>
+
+    <div class="inc-card">
+      <div class="inc-icon">🚿</div>
+      <h3>Showers & Changing Rooms</h3>
+      <p>Clean, comfortable facilities to freshen up after your workout.</p>
+    </div>
+
+    <div class="inc-card">
+      <div class="inc-icon">📶</div>
+      <h3>Free WiFi</h3>
+      <p>Stay connected for music, videos and your fitness apps.</p>
+    </div>
+
+    <div class="inc-card">
+      <div class="inc-icon">📱</div>
+      <h3>Progress Tracking</h3>
+      <p>Track your weight, workouts and results over time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="included1" id="included1"
+data-trail
+data-images="images/DeadLift.jpg, images/flys.jpg, images/overhead.jpg, images/pullup.jpg, images/pushup.jpg, images/single leg lunge.jpg, images/trainer2.jpg, images/trainer3.jpg, images/trainer4.jpg, images/trainer1.jpg ">
+</section>
+
+<!-- CTA -->
+<section id="cta" class="section cta">
+  <div class="container center reveal">
+    <h2>Ready to Start?</h2>
+    <p>Book your free trial session today.</p>
+    <a href="contact.html" class="btn">Book Free Trial</a>
+  </div>
+</section>
+
+<!-- Gallery section -->
+<section class="dg-section">
+
+  <div class="dg-intro">
+    <span class="dg-eyebrow">FEEL THE ENERGY</span>
+    <h2>Where Fitness <span>Comes Alive</span></h2>
+  </div>
+
+  <div class="dg-stage">
+    <div class="dg-card"><img src="images/Gym1.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/Gym2.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/Gym3.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/Gym4.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/gym7.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/gym8.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/Cardio.jpg" alt="" draggable="false" /></div>
+    <div class="dg-card"><img src="images/single leg lunge.jpg" alt="" draggable="false" /></div>
+  </div>
+
+</section>
+
+<!-- <footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+</footer> -->
+<footer class="ft">
+
+  <div class="ft-main">
+
+    <!-- Brand + social -->
+    <div class="ft-col ft-brand">
+      <a href="index.html" class="logo">Body<span>Fitness</span></a>
+      <p>Expert coaches, modern equipment and a supportive community. We are here to help you become stronger, fitter and more confident.</p>
+      <div class="ft-social">
+  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+   <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+   </a>
+   <a href="https://wa.me/919311135172" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+   </a>
+   <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+    <i class="fa-brands fa-x-twitter"></i>
+   </a>
+  </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Programs -->
+    <div class="ft-col">
+      <h4>Our Programs</h4>
+      <a href="programs.html">Weight Loss</a>
+      <a href="programs.html">Muscle Gain</a>
+      <a href="programs.html">Personal Training</a>
+      <a href="programs.html">Group Classes</a>
+      <a href="programs.html">Nutrition Plans</a>
+    </div>
+
+    <!-- Timing + Contact -->
+    <div class="ft-col">
+      <h4>Gym Timing</h4>
+      <p class="ft-time"><b>Mon – Sat</b><span>5:00 AM – 10:00 PM</span></p>
+      <p class="ft-time"><b>Sunday</b><span>7:00 AM – 12:00 PM</span></p>
+      <h4 class="ft-gap">Contact</h4>
+      <p>📍 Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+      <p>📞 +91 93111 35172</p>
+      <p>✉️ hello@bodyfitness.com</p>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="ft-news">
+    <div>
+      <h4>Get Free Fitness Tips</h4>
+      <p>Weekly workout aur diet tips seedha aapke inbox mein.</p>
+    </div>
+    <form id="newsForm" class="ft-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-sm">Subscribe</button>
+    </form>
+    <p class="ft-msg" id="newsMsg"></p>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+    <p>Made with 💪 for fitness lovers</p>
+  </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="image-trail.js"></script>
+<script src="diagonal-stack.js"></script>
+<script src="recent-works.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

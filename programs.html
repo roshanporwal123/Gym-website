@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programs – BodyFitness</title>
+  <link rel="stylesheet" href="circle-reveal.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- Scroll line + dumbbell -->
+<svg class="scroll-line" viewBox="0 0 100 800" fill="none" aria-hidden="true">
+  <path class="track" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <path id="drawPath" d="M50 20 C 10 120, 90 220, 50 320 S 10 520, 50 620 S 90 720, 50 780" />
+  <g id="dumbbell">
+    <g id="dbSpin" stroke="#d97706" stroke-width="3" stroke-linejoin="round" fill="#fffbeb">
+      <line x1="-22" y1="0" x2="22" y2="0" />
+      <rect x="-38" y="-19" width="8" height="38" rx="3" />
+      <rect x="-29" y="-13" width="7" height="26" rx="2" />
+      <rect x="22" y="-13" width="7" height="26" rx="2" />
+      <rect x="30" y="-19" width="8" height="38" rx="3" />
+    </g>
+  </g>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Body<span>Fitness</span></a>
+    <nav class="menu" id="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html" class="active">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-sm">Join Now</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- Programs -->
+<section id="programs" class="section programs-video page-top">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="video/Gym2.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+
+  <div class="container programs-content">
+    <div class="head reveal">
+      <span class="eyebrow">Programs</span>
+      <h2>Train Your Way</h2>
+    </div>
+    <div class="grid">
+      <article class="card reveal"><div class="icon">🔥</div><h3>Transformation</h3><p>Time-bound plans with weekly accountability.</p></article>
+      <article class="card reveal"><div class="icon">🎯</div><h3>Personal Training</h3><p>One-on-one coaching built around you.</p></article>
+      <article class="card reveal"><div class="icon">👥</div><h3>Group Classes</h3><p>HIIT, strength circuits and Zumba.</p></article>
+      <article class="card reveal"><div class="icon">🥗</div><h3>Nutrition</h3><p>Simple meal plans that actually work.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Workouts slider -->
+<section id="workouts" class="section wk-section wk-video">
+  <video class="bg-video" autoplay muted loop playsinline preload="metadata">
+    <source src="video/Gym7.mp4" type="video/mp4">
+  </video>
+  <div class="bg-overlay"></div>
+  <div class="head reveal">
+    <span class="eyebrow">Workouts</span>
+    <h2>Train With Us</h2>
+  </div>
+
+  <div class="wk-slider" id="wkSlider">
+    <div class="wk-track" id="wkTrack">
+
+      <article class="wk-card" data-video="video/Gym1.mp4">
+        <img src="images/flys.jpg" alt="Flys">
+        <span class="wk-label">Flys</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Flys</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym2.mp4">
+        <img src="images/single leg lunge.jpg" alt="Single Leg Lunge">
+        <span class="wk-label">Single Leg Lunge</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Single Leg Lunge</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym3.mp4">
+        <img src="images/overhead.jpg" alt="Overhead Press">
+        <span class="wk-label">Overhead Press</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Overhead Press</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym4.mp4">
+        <img src="images/squat.jpg" alt="Squat">
+        <span class="wk-label">Squat</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Squat</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym5.mp4">
+        <img src="images/DeadLift.jpg" alt="Deadlift">
+        <span class="wk-label">Deadlift</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Deadlift</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym.mp4">
+        <img src="images/pushup.jpg" alt="Push Up">
+        <span class="wk-label">Push Up</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Push Up</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym6.mp4">
+        <img src="images/pullup.jpg" alt="Pull Up">
+        <span class="wk-label">Pull Up</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Pull Up</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+
+      <article class="wk-card" data-video="video/Gym2.mp4">
+        <img src="images/plank.jpg" alt="Plank">
+        <span class="wk-label">Plank</span>
+        <div class="wk-panel">
+          <svg class="wk-wave" viewBox="0 0 400 40" preserveAspectRatio="none"><path d="M0 22 C 90 -10, 190 50, 400 4 L400 40 L0 40Z"/></svg>
+          <h3>Plank</h3>
+          <button class="btn btn-sm wk-watch">Watch</button>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="wk-nav">
+    <button id="wkPrev" aria-label="Previous">‹</button>
+    <button id="wkNext" aria-label="Next">›</button>
+  </div>
+</section>
+
+<!-- Video popup -->
+<div class="wk-modal" id="wkModal">
+  <button class="wk-close" id="wkClose" aria-label="Close">✕</button>
+  <video id="wkVideo" controls playsinline></video>
+</div>
+
+<!-- <section class="programs">
+  <div class="programs-sticky">
+    <div class="programs-track">
+      <div class="program-card"><h2>Strength</h2><p>Build raw power</p></div>
+      <div class="program-card"><h2>Cardio</h2><p>Burn and endure</p></div>
+      <div class="program-card"><h2>Yoga</h2><p>Flex and recover</p></div>
+      <div class="program-card"><h2>CrossFit</h2><p>Push your limits</p></div>
+    </div>
+  </div>
+</section> -->
+
+<div class="marquee">
+  <div class="marquee-inner">
+    <span>STRENGTH • CARDIO • YOGA • CROSSFIT • </span>
+    <span>STRENGTH • CARDIO • YOGA • CROSSFIT • </span>
+  </div>
+</div>
+
+
+<!-- Circle reveal animation -->
+<section class="cr-stage">
+  <div class="cr-ring">
+    <img class="cr-card" src="images/Cardio.jpg" alt="" />
+    <img class="cr-card" src="images/Weight-Loss.jpg" alt="" />
+    <img class="cr-card" src="images/gym8.jpg" alt="" />
+    <img class="cr-card" src="images/flys.jpg" alt="" />
+    <img class="cr-card" src="images/overhead.jpg" alt="" />
+    <img class="cr-card" src="images/pullup.jpg" alt="" />
+    <img class="cr-card" src="images/pushup.jpg" alt="" />
+    <img class="cr-card" src="images/Gym1.jpg" alt="" />
+    <img class="cr-card" src="images/Gym2.jpg" alt="" />
+    <img class="cr-card" src="images/Gym3.jpg" alt="" />
+    <img class="cr-card" src="images/Gym4.jpg" alt="" />
+    <img class="cr-card" src="images/gym9.jpg" alt="" />
+  </div>
+  <img class="cr-main" src="images/DeadLift.jpg" alt="" />
+</section>
+
+<section class="pc-section" id="categories">
+  <div class="pc-head">
+    <span class="pc-eyebrow">PROGRAMS</span>
+    <h2>Choose Your Program</h2>
+    <p>Whatever your goal is, we have a plan built for you.</p>
+  </div>
+
+  <div class="pc-grid">
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Weight-Loss.jpg" alt="Weight Loss program">
+        <span class="pc-tag">Beginner</span>
+      </div>
+      <div class="pc-body">
+        <h3>Weight Loss</h3>
+        <p>Burn fat with a mix of cardio, strength and a simple diet plan.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Muscle-Gain.jpg" alt="Muscle Gain program">
+        <span class="pc-tag">Intermediate</span>
+      </div>
+      <div class="pc-body">
+        <h3>Muscle Gain</h3>
+        <p>Build size and strength with progressive weight training.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Yoga1.jpg" alt="Yoga program">
+        <span class="pc-tag">All Levels</span>
+      </div>
+      <div class="pc-body">
+        <h3>Yoga</h3>
+        <p>Improve flexibility, balance and calm your mind.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Cardio.jpg" alt="Cardio program">
+        <span class="pc-tag">All Levels</span>
+      </div>
+      <div class="pc-body">
+        <h3>Cardio</h3>
+        <p>Boost stamina and heart health with high-energy sessions.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Crossfit.jpg" alt="CrossFit program">
+        <span class="pc-tag">Advanced</span>
+      </div>
+      <div class="pc-body">
+        <h3>CrossFit</h3>
+        <p>Full-body functional training to push your limits.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+
+    <article class="pc-card">
+      <div class="pc-img">
+        <img src="images/Zumba.jpg" alt="Zumba program">
+        <span class="pc-tag">Fun</span>
+      </div>
+      <div class="pc-body">
+        <h3>Zumba</h3>
+        <p>Dance your way to fitness with music and fun group classes.</p>
+        <a href="#" class="pc-btn">Learn More</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 3D RING GALLERY -->
+<section class="r3d-section" id="gallery3d">
+  <div class="r3d-head">
+    <span class="r3d-eyebrow">No Excuses</span>
+    <h2>Pain Today, Power Tomorrow</h2>
+  </div>
+
+  <div class="r3d-scene" id="r3dScene">
+    <div class="r3d-tilt" id="r3dTilt">
+      <div class="r3d-ring" id="r3dRing"></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="faq-head">
+    <span class="faq-eyebrow">FAQ</span>
+    <h2>Frequently Asked Questions</h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span>Which program is best for beginners?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p>If you are new to the gym, start with our Weight Loss or Basic Fitness program. A trainer will guide you step by step.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span>Do you offer a free trial?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p>Yes, we offer a 2-day free trial. Click the Join Now button to book your spot.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span>What are the gym timings?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p>Monday to Saturday, 5:00 AM to 10:00 PM. The gym is closed on Sundays.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span>Do you provide personal trainers?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p>A personal trainer is included in the Premium plan. Other plans include group sessions with trainer guidance.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span>Can I freeze or cancel my membership?</span>
+        <i class="faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p>Yes, your membership can be frozen with a valid reason. Please contact the reception desk for details.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <footer class="footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+</footer> -->
+
+<footer class="ft">
+
+  <div class="ft-main">
+
+    <!-- Brand + social -->
+    <div class="ft-col ft-brand">
+      <a href="index.html" class="logo">Body<span>Fitness</span></a>
+      <p>Expert coaches, modern equipment and a supportive community. We are here to help you become stronger, fitter and more confident.</p>
+      <div class="ft-social">
+  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+  <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+    <i class="fa-brands fa-youtube"></i>
+  </a>
+  <a href="https://wa.me/919311135172" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="https://www.x.com" target="_blank" rel="noopener noreferrer" aria-label="X" title="X">
+    <i class="fa-brands fa-x-twitter"></i>
+  </a>
+</div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Programs -->
+    <div class="ft-col">
+      <h4>Our Programs</h4>
+      <a href="programs.html">Weight Loss</a>
+      <a href="programs.html">Muscle Gain</a>
+      <a href="programs.html">Personal Training</a>
+      <a href="programs.html">Group Classes</a>
+      <a href="programs.html">Nutrition Plans</a>
+    </div>
+
+    <!-- Timing + Contact -->
+    <div class="ft-col">
+      <h4>Gym Timing</h4>
+      <p class="ft-time"><b>Mon – Sat</b><span>5:00 AM – 10:00 PM</span></p>
+      <p class="ft-time"><b>Sunday</b><span>7:00 AM – 12:00 PM</span></p>
+      <h4 class="ft-gap">Contact</h4>
+      <p>📍 Shivam Plaza, Sector 12, Dwarka, New Delhi</p>
+      <p>📞 +91 93111 35172</p>
+      <p>✉️ hello@bodyfitness.com</p>
+    </div>
+
+  </div>
+
+  <!-- Newsletter -->
+  <div class="ft-news">
+    <div>
+      <h4>Get Free Fitness Tips</h4>
+      <p>Weekly workout aur diet tips seedha aapke inbox mein.</p>
+    </div>
+    <form id="newsForm" class="ft-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit" class="btn btn-sm">Subscribe</button>
+    </form>
+    <p class="ft-msg" id="newsMsg"></p>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="ft-bottom">
+    <p>© <span id="year"></span> BodyFitness. All rights reserved.</p>
+    <p>Made with 💪 for fitness lovers</p>
+  </div>
+
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+<script src="ring3d.js"></script>
+<script src="circle-reveal.js"></script>
+
+</body>
+</html>
