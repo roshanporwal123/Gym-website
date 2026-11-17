@@ -7,12 +7,12 @@ const scene = document.getElementById("r3dScene");
 
 // apni images yaha daalo
 const images = [
-  "images/gym1.jpg",
-  "images/gym2.jpg",
-  "images/gym3.jpg",
-  "images/gym4.jpg",
-  "images/gym5.jpg",
-  "images/gym6.jpg",
+  "images/Gym1.jpg",
+  "images/Gym3.jpg",
+  "images/Gym4.jpg",
+  "images/Gym5.jpg",
+  "images/overhead.jpg",
+  "images/single leg lunge.jpg",
   "images/plank.jpg",
   "images/DeadLift.jpg",
   "images/pullup.jpg",
