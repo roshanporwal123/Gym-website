@@ -1006,7 +1006,9 @@ h2{font-size:clamp(1.7rem,3.5vw,2.6rem);margin:8px 0 14px;line-height:1.2}
   content: attr(data-num);
   position: absolute; right: 18px; top: 4px;
   font-size: 5rem; font-weight: 800; line-height: 1;
-  color: rgba(217, 119, 6, .10); transition: color .4s;
+  color: #1f2937;
+  opacity: .18;
+  transition: color .4s, opacity .4s;
 }
 /* Neeche neon line (hover par bharti hai) */
 .wc-card::after {
@@ -1017,7 +1019,9 @@ h2{font-size:clamp(1.7rem,3.5vw,2.6rem);margin:8px 0 14px;line-height:1.2}
   transform: translateY(-10px); border-color: #fcd34d;
   box-shadow: 0 22px 45px -14px rgba(252, 211, 77, .45);
 }
-.wc-card:hover::before { color: rgba(252, 211, 77, .35); }
+.wc-card:hover::before { color: #f59e0b;
+  opacity: .9;
+ }
 .wc-card:hover::after { width: 100%; }
 
 .wc-icon {
